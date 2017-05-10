@@ -122,6 +122,7 @@
         "drupal/views_php": "1.x-dev",
         "drupal/webform": "5.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
+        "drush/drush": "~9.0",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
         "symfony/filesystem": "~3.2",
