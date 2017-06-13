@@ -98,6 +98,7 @@
         "drupal/devel": "1.x-dev",
         "drupal/entity": "1.x-dev",
         "drupal/entityqueue": "1.x-dev",
+        "drupal/examples": "1.x-dev",
         "drupal/externalauth": "1.x-dev",
         "drupal/features": "3.x-dev",
         "drupal/key_value": "1.x-dev",
