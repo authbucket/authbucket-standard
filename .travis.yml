@@ -14,6 +14,7 @@ before_install:
   - travis_retry composer global require --no-update hirak/prestissimo:@stable
   - travis_retry composer global require --no-update drush/drush:@stable
   - travis_retry composer global update
+  - env
   - export PATH=~/.composer/vendor/bin:$PATH
 
 install:
