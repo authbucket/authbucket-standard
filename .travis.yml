@@ -12,13 +12,15 @@ before_install:
   - sh -c "if [ $TRAVIS_PHP_VERSION = '5.6' ]; then echo 'always_populate_raw_post_data = -1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi"
   - travis_retry composer self-update
   - travis_retry composer global require --no-update hirak/prestissimo:@stable
+  - travis_retry composer global require --no-update drush/drush:@stable
   - travis_retry composer global update
+  - export PATH=~/.composer/vendor/bin:$PATH
 
 install:
   - travis_retry composer update
   - travis_retry npm update
   - cd $TRAVIS_BUILD_DIR/web
-  - ../vendor/bin/drush site-install authbucket --yes --db-url=sqlite://sites/default/files/.ht.sqlite
+  - drush site-install authbucket --yes --db-url=sqlite://sites/default/files/.ht.sqlite
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 
 script:
