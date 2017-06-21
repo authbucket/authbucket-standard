@@ -49,7 +49,8 @@
         },
         "patches": {
             "drupal/core": {
-                "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch"
+                "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
+                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-40.patch"
             },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2852269": "https://drupal.org/files/issues/invisible_option-2852269-36.patch"
@@ -130,8 +131,7 @@
     "require-dev": {
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
-        "drupal/coder": "~8.2",
-        "jcalderonzumba/gastonjs": "~1.0",
+        "jcalderonzumba/gastonjs": "~1.1",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
         "mikey179/vfsStream": "~1.2",
         "symfony/phpunit-bridge": "3.2.*"
