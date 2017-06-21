@@ -134,7 +134,6 @@
         "jcalderonzumba/gastonjs": "~1.0",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
         "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": "~4.8",
         "symfony/phpunit-bridge": "3.2.*"
     },
     "scripts": {
